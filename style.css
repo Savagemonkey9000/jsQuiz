@@ -26,14 +26,14 @@ body {
   button {
     margin-top: 20px;
   }
-  .failure {
+.failure {
     color: red;
 }
 
 .good {
-    color: yellow;
+    color: rgba(246, 246, 34, 0.871);
 }
 
 .well-done {
-    color: green;
+    color: rgb(4, 235, 4);
 }
