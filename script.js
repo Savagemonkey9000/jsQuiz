@@ -22,7 +22,7 @@ const questionsArr = [
   }
   function calculateResult() {
     let score = 0;
-    questions.forEach((question, index) => {
+    questionsArr.forEach((question, index) => {
       const selected = document.querySelector(
         `input[name="question${index}"]:checked`
       );
@@ -31,4 +31,19 @@ const questionsArr = [
       }
     });
     return score;
+  }
+  function showResult(score) {
+    const resultContainer = document.getElementById("result-container");
+    resultContainer.innerHTML = `Du fick ${score} av ${questionsArr.length} rätt.`;
+  }
+  function toggleTheme() {
+    const body = document.body;
+    const themeButton = document.getElementById("toggle-theme");
+    if (body.classList.contains("dark-mode")) {
+      body.classList.replace("dark-mode", "light-mode");
+      themeButton.innerText = "Byt till Dark Mode";
+    } else {
+      body.classList.replace("light-mode", "dark-mode");
+      themeButton.innerText = "Byt till Light Mode";
+    }
   }
