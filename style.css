@@ -7,19 +7,33 @@ body {
   #quiz-container {
     max-width: 600px;
     margin: auto;
+    border-color: #333;
+    border-bottom: 2px;
   }
   
   .light-mode {
     background-color: #fff;
     color: #000;
+    
   }
   
   .dark-mode {
     background-color: #333;
     color: #fff;
+    border-color: aliceblue;
   }
   
   button {
     margin-top: 20px;
   }
-  
+  .failure {
+    color: red;
+}
+
+.good {
+    color: yellow;
+}
+
+.well-done {
+    color: green;
+}
